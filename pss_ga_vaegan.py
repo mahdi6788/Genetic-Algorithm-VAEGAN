@@ -131,7 +131,7 @@ gan=keras.models.Sequential([decoder,discriminator])
 ## layer loss
 output=layer()(vae(inputs))
 vaeGan=keras.models.Model(inputs=[inputs],outputs=[output])
-vaeGan.compile(loss= "mean_squared_error", optimizer=optimizer)
+vaeGan.compile(loss= "mean_absolute_error", optimizer=optimizer)
 
 ##### Objective function #####
 def predictions(decoded):
