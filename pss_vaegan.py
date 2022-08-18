@@ -108,7 +108,7 @@ gan=keras.models.Sequential([decoder,discriminator])
 ## layer loss
 output=layer()(vae(inputs))
 vaeGan=keras.models.Model(inputs=[inputs],outputs=[output])
-vaeGan.compile(loss= "mean_squared_error", optimizer=optimizer)
+vaeGan.compile(loss= "mean_absolute_error", optimizer=optimizer)
 
 n_epochs=5000 
 batch_size=5
