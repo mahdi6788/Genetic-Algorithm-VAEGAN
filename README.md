@@ -1,4 +1,4 @@
-# Synthesizing Part Span Shroud for Design Optimization using Genetic Algorithm
+# Synthesizing Part Span Shroud for Design Optimization using VAEGAN and Genetic Algorithm
 
 This repository is the implementation corresponding to the paper "Encoding and Synthesizing Part Span Shroud for Aero-Structural Design Optimization using Genetic Algorithm", linked here.
 
